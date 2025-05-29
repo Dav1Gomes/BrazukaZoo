@@ -1,0 +1,316 @@
+
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    min-height: 100vh;
+    background: linear-gradient(to right, #2783FF, #089746);
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+    display: block;
+}
+
+
+.logo-container{
+    background-color: #372D85;
+    padding: 1rem 3rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom right, #372D85 0%, #372D85 25%, #FFCD08 55%, #089746 100%);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.call-to-action {
+    margin-top: 2rem;
+}
+
+.call-to-action a {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.call-to-action a:hover,
+.cta-button:hover {
+    background-color: #1763cc;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.animal-preview {
+    background-color: #f9f9f9;
+    border-top: 4px solid #089746;
+}
+
+.animal-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #2783FF;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.visita-chamada p,
+.sobre p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.cta-button + .cta-button {
+    margin-left: 1rem;
+}
+
+header {
+    background-color: #372D85;
+    padding: 0.8rem 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    min-height: 70px;
+}
+
+header img {
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #089746;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #056d34;
+}
+
+footer {
+    background-color: #372D85;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+.footer-copy {
+    color: #AEEA00;
+}
+
+.visita-container {
+    max-width: 500px;
+    margin: 100px auto;
+    background: white;
+    border: 3px solid #FFCD08;
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.visita-container h2 {
+    color: #372D85;
+    margin-bottom: 1.5rem;
+}
+
+.visita-container input[type="date"],
+.visita-container input[type="time"],
+.visita-container input[type="number"],
+.visita-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    resize: vertical;
+}
+
+.visita-container button[type="submit"] {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.visita-container button[type="submit"]:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+
+.visita-container .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+}
+
+.visita-container p {
+    text-align: center;
+}
+
+.menu-blocos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.admin-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1.2rem;
+}
+
+.admin-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #FFCD08;
+    color: #372D85;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.admin-nav a:hover {
+    background-color: #e6b800;
+}
+
+.user-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.user-nav a {
+    color: white;
+    background-color: #089746;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.user-nav a:hover {
+    background-color: #056d34;
+}
+/*Estilização dos card dos Animais*/
+.animal-card {
+    background-color: white;
+    border: 2px solid #2783FF;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    width: 280px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    max-height: 140px;
+}
+
+.animal-card.expand {
+    max-height: 400px;
+}
+
+.animal-card .card-body {
+    margin-top: 1rem;
+    display: none;
+}
+
+.animal-card.expand .card-body {
+    display: block;
+}
+

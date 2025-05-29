@@ -1,0 +1,394 @@
+/*Estilização do Admin - Padrão*/
+body {
+    background: linear-gradient(to right, #2783FF, #089746);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.admin-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+    background: white;
+    border: 3px solid #FFCD08;
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+
+}
+
+
+.admin-container h2 {
+    color: #372D85;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-admin label {
+    display: block;
+    text-align: left;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-admin input,
+.formulario-admin select,
+.formulario-admin textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formulario-admin button {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.formulario-admin button:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+
+.alert-success {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #DFF2BF;
+    color: #4F8A10;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+.alert-hide {
+    opacity: 0;
+}
+
+.formulario-admin label {
+    display: block;
+    text-align: left;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-admin input,
+.formulario-admin select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.formulario-admin button {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.formulario-admin button:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+
+/* Estilização Registro de Animais */
+
+.tabela-animais {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border: 2px solid #089746;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    table-layout: auto;
+}
+
+.tabela-animais th {
+    background-color: #089746;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+.tabela-animais td {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.tabela-animais tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.tabela-animais tr:hover {
+    background-color: #eafaea;
+}
+
+.tabela-animais td:last-child {
+    text-align: center;
+}
+
+/* Estilização do formulário de cadastro de animal */
+
+.cadastro-animal .formulario-admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cadastro-animal .formulario-admin label {
+    grid-column: span 2;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.cadastro-animal .formulario-admin input,
+.cadastro-animal .formulario-admin select,
+.cadastro-animal .formulario-admin textarea {
+    width: 100%;
+    padding: 0.65rem;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cadastro-animal .formulario-admin textarea {
+    grid-column: span 2;
+}
+
+.cadastro-animal .formulario-admin button {
+    grid-column: span 2;
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    justify-self: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cadastro-animal .formulario-admin button:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+
+/* Estilização Cadastro de Funcionários */
+
+.formulario-funcionario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-funcionario label {
+    display: block;
+    text-align: left;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-funcionario input,
+.formulario-funcionario select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.formulario-funcionario button {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.formulario-funcionario button:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+
+/*Estilização do admin*/
+.admin-sections {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.admin-section {
+    background-color: #fff;
+    border-left: 6px solid #FFCD08;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    flex: 0 0 200px;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.admin-section h3 {
+    color: #372D85;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.admin-section p {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.admin-section .cta-button {
+    width: 100%;
+    background-color: #2783FF;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-section .cta-button:hover {
+    background-color: #1763cc;
+}
+
+.admin-section a.cta-button:first-of-type {
+    margin-top: 0.5rem;
+}
+
+
+
+/*Estilização da lista de visitas*/
+
+.tabela-visitas {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabela-visitas th {
+    background-color: #089746;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom: 2px solid #056d34;
+}
+
+.tabela-visitas td {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-visitas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-visitas tr:hover {
+    background-color: #e6ffe8;
+}
+
+.tabela-visitas td:last-child {
+    text-align: center;
+}
+
+.botao-cancelar {
+    background-color: #FF4D4D;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.botao-cancelar:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Estilização especial para tabela de visitas */
+.visitas-admin {
+    max-width: 95%;
+    padding: 2rem 3rem;
+}
+
+.tabela-visitas th,
+.tabela-visitas td {
+    text-align: center;
+    vertical-align: middle;
+}

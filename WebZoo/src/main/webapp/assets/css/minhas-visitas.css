@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to right, #2783FF, #089746);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.minhas-visitas-container {
+    max-width: 700px;
+    margin: 100px auto;
+    background: white;
+    border: 3px solid #FFCD08;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.minhas-visitas-container h2 {
+    color: #372D85;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.tabela-visitas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.tabela-visitas th,
+.tabela-visitas td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.tabela-visitas th {
+    background-color: #372D85;
+    color: white;
+}
+
+.tabela-visitas td {
+    color: #222;
+}

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2783FF, #089746);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-cadastro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 1rem;
+}
+
+.pagina-cadastro .formulario-container {
+    background-color: white;
+    border: 3px solid #FFCD08;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.pagina-cadastro h2 {
+    text-align: left;
+    color: #372D85;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.formulario-admin input,
+.formulario-admin select,
+.formulario-admin textarea {
+    padding: 0.65rem;
+    border: 2px solid #089746;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario-admin textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-admin button {
+    background-color: #2783FF;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.formulario-admin button:hover {
+    background-color: #1763cc;
+    transform: scale(1.03);
+}
+.alert-success {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background-color: #DFF2BF;
+    color: #4F8A10;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+    border-left: 6px solid #4F8A10;
+}
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 6px solid #f44336;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}

@@ -1,0 +1,16 @@
+.alert-success {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #DFF2BF;
+    color: #4F8A10;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+.alert-hide {
+    opacity: 0;
+}
