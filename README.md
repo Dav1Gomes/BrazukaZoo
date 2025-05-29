@@ -1,4 +1,4 @@
-# 🐾 BrazukaZoo
+<img src='https://cdn.discordapp.com/attachments/653757012844347403/1377739380093095946/image.png?ex=683a0f49&is=6838bdc9&hm=b0ae7710dc830755455803779e470d10f7ab07b8ca42ffa8866389889fce941e&'>
 
 **BrazukaZoo** é um website desenvolvido em Java como parte de um trabalho acadêmico. O sistema permite que visitantes agendem visitas ao zoológico e visualizem os animais disponíveis. Além disso, oferece funcionalidades específicas para administradores e funcionários, como gestão de animais, controle de visitas e cuidados com os bichinhos. Este projeto foi desenvolvido com fins **acadêmicos**, focando na simulação de um sistema completo de gestão para um zoológico fictício.
 
